@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/Header";
+import Nav from "../components/Nav";
 
 export default function Home() {
   return (
@@ -11,7 +12,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* header */}
-      <Header/>
+      <Header />
+      <Nav />
     </div>
   );
+}
+export async function getServerSideProps(context) {
+  const genre = context.query;
+  console.log("context:", genre);
+  return {
+    props: {}, // will be passed to the page component as props
+  };
 }

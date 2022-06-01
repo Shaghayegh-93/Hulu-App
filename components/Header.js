@@ -13,7 +13,7 @@ import {
 const Header = () => {
   return (
     <header className="flex flex-col m-5 h-auto sm:flex-row sm:items-center sm:justify-between">
-      <div className="flex justify-evenly sm:justify-between  flex-grow max-w-2xl">
+      <div className="flex justify-evenly sm:justify-between  flex-grow max-w-2xl text-xs">
         <HeaderItem title="Home" Icon={HomeIcon} />
         <HeaderItem title="TRENDING" Icon={LightningBoltIcon} />
         <HeaderItem title="VERIFIED" Icon={BadgeCheckIcon} />
@@ -23,8 +23,8 @@ const Header = () => {
       </div>
       <Image
         src="https://links.papareact.com/ua6"
-        width={150}
-        height={80}
+        width={120}
+        height={70}
         alt="hulu"
         className="object-contain"
       />

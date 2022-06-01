@@ -6,7 +6,7 @@ import Results from "../components/Results";
 import requests from "../utils/requests";
 
 export default function Home({ results }) {
-  console.log("props:", props);
+  console.log("results:", results);
   return (
     <div>
       <Head>
@@ -22,7 +22,6 @@ export default function Home({ results }) {
 }
 export async function getServerSideProps(context) {
   const genre = context.query.genre;
-  console.log("genre:", genre);
   const request = await fetch(
     `https://api.themoviedb.org/3${
       requests[genre]?.url || requests.fetchTrending.url

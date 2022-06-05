@@ -1,13 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import { ThumbUpIcon } from "@heroicons/react/outline";
-import { forwardRef } from "react";
+// import { forwardRef } from "react";
 // eslint-disable-next-line react/display-name
-const MovieCard = forwardRef(({ result }, ref) => {
+const MovieCard = ({ result }) => {
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
-  console.log("result:", result);
-  console.log("result.posteeeer:", result.poster_path);
-  console.log("resulttttttt:", result.first_air_date);
+  // console.log("result:", result);
+  // console.log("result.posteeeer:", result.poster_path);
+  // console.log("resulttttttt:", result.first_air_date);
   return (
     <div className="group p-2 cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
       <Image
@@ -34,6 +34,6 @@ const MovieCard = forwardRef(({ result }, ref) => {
       </div>
     </div>
   );
-});
+};
 
 export default MovieCard;

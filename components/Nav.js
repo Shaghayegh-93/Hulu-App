@@ -4,7 +4,7 @@ import requests from "../utils/requests";
 
 const Nav = () => {
   const router = useRouter();
-  console.log("router:", router);
+  // console.log("router:", router);  
   return (
     <nav className="relative sm:px-4">
       <div className="flex px-6  sm:px-10 text-sm sm:text-base whitespace-nowrap space-x-5 sm:space-x-20 overflow-x-scroll scrollbar-hide">
